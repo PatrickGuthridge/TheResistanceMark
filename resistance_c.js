@@ -437,16 +437,16 @@ if(testPrevScore == null){
 }
 window.onload = function() {
 	window.history.pushState("index.htm", "","index.htm");
-	document.title = "*Resistance Benchmark Beta";
+	document.title = "TheResistanceMark Beta";
 	if(test == 0 || test == null){
 		request("menu");
 	}
 	else if(test == "results"){
 		request("menu");
+		request("score");
 		setTimeout(function(){
 			results();
-			request("score");
-		},500);
+		},1000);
 	}
 	else if(test == "cst"){
 		request("customForm");
