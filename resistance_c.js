@@ -443,8 +443,8 @@ window.onload = function() {
 	}
 	else if(test == "results"){
 		request("menu");
-		results();
 		setTimeout(function(){
+			results();
 			request("score");
 		},500);
 	}
