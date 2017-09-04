@@ -362,7 +362,7 @@ function init() {
 
 
   function start(i){
-    benchT = benchC / 1024 * 11 - 1;
+    benchT = benchC / 1024 * 12 - 1;
     r++;
     if(i == 3 && r <= benchC){
        setTimeout(function(){q(i,x,y,z);},550);
