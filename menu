@@ -18,4 +18,5 @@
 <button onclick="init();">Go</button>
 <p>
 <button onclick="readMe();">Show the readme</button>
+<button onclick="scoreAnalysis();">Score Analysis</button>
 </div>
