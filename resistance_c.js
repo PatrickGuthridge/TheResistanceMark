@@ -422,6 +422,7 @@ function request(src){
 			if (this.readyState == 4 && this.status == 200)
 			{
 				document.body.innerHTML += this.responseText;
+					console.log("recived data.")
 				if(src == "test"){
 					progress = document.getElementById("progressCurrent");
 					progressScore = document.getElementById("scorexxx");
@@ -430,6 +431,7 @@ function request(src){
 			}}
 		request.open("GET", src, true);
 		request.send();
+		console.log("sent request.")
 }
 var test = uriParameter("test");
 var getCurrent = uriParameter("current");
