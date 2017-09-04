@@ -17,6 +17,7 @@ In later versions, the benchmark will render graphs and detect patterns in the s
 Generally, the standardised test should be used to get a fast, overall picture. However:
 	- If looking for browser speed, use the 1000 set single test.
 	- If looking for browser stability and/or stress resistance consider using higher tests(16000 is usually good, however if your computer is strong, consider going up to 32000 or even 64000).
+	- There is now also a custom test option which is NON STANDARD, use it for experimenting only, not as a basis for browser comparison.
 
 On the test drop down, the following comments are found on the sides:
 	- -Depreciated- : This means that the test should only be used for speed or on low end systems.
