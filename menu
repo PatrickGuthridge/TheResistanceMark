@@ -15,5 +15,5 @@
 	<option value="131072">Single Test - 128000[131072]Computation Sets. -Non Standard-</option>
 	<option value="cst">Custom Test...</option>
 </select>
-<button onclick="init();">start</button>
+<button onclick="init();">Go</button>
 </div>
