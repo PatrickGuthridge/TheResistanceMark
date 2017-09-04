@@ -394,7 +394,7 @@ function tstart(){
 function score(){
 	if(test == "qck" || test == "std" || test == "ext" || test == "xtr" || test == "fll"){
 		var next = testCurrent + 1;
-		window.location = "float.htm?test=" + test + "&prev=" + testPrevScore + "/" + curr + "&current=" + next;		
+		window.location = "index.htm?test=" + test + "&prev=" + testPrevScore + "/" + curr + "&current=" + next;		
 	}
 	else{
 		window.location = "index.htm?test=results&prev=/" + curr;
