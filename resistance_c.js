@@ -2,7 +2,7 @@
 !function() {
 
 	var URL = window.URL || window.webkitURL;
-	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does not support the hardware Concurrency property.')}if(!URL) {
+	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
 window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
 	}
 
@@ -356,7 +356,7 @@ var timer = MT.process(
 );
 function init() {
     data = document.getElementById('benchQu').value;
-    window.location = "float.htm?test=" + data;	
+    window.location = "index.htm?test=" + data;	
 }
 
 
@@ -394,10 +394,10 @@ function tstart(){
 function score(){
 	if(test == "qck" || test == "std" || test == "ext" || test == "xtr" || test == "fll"){
 		var next = testCurrent + 1;
-		window.location = "float.htm?test=" + test + "&prev=" + testPrevScore + "/" + curr + "&current=" + next;		
+		window.location = "index.htm?test=" + test + "&prev=" + testPrevScore + "/" + curr + "&current=" + next;		
 	}
 	else{
-		window.location = "float.htm?test=results&prev=/" + curr;
+		window.location = "index.htm?test=results&prev=/" + curr;
 	}
 }
 function results(){
@@ -433,7 +433,7 @@ if(testPrevScore == null){
 	testPrevScore = "";
 }
 window.onload = function() {
-	window.history.pushState("float.htm", "","float.htm");
+	window.history.pushState("index.htm", "","index.htm");
 	document.title = "*Resistance Benchmark Beta";
 	if(test == 0 || test == null){
 		request("menu");
@@ -463,7 +463,7 @@ window.onload = function() {
 			start(3);
 		}
 		if(testCurrent == 3){
-  		        window.location = "float.htm?test=results&prev=" + testPrevScore;				
+  		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}
 	}
 	else if(test == "std"){
@@ -480,7 +480,7 @@ window.onload = function() {
 			start(3);
 		}
 		if(testCurrent == 3){
-  		        window.location = "float.htm?test=results&prev=" + testPrevScore;				
+  		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}	
 	}
 	else if(test == "ext"){
@@ -501,7 +501,7 @@ window.onload = function() {
 			start(3);
 		}	
 		if(testCurrent == 4){
-  		        window.location = "float.htm?test=results&prev=" + testPrevScore;				
+  		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}	
 	}
 	else if(test == "xtr"){
@@ -522,7 +522,7 @@ window.onload = function() {
 			start(3);
 		}	
 		if(testCurrent == 4){
-  		        window.location = "float.htm?test=results&prev=" + testPrevScore;				
+  		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}	
 	}
 	else if(test == "fll"){
@@ -555,7 +555,7 @@ window.onload = function() {
 			start(3);
 		}
 		if(testCurrent == 7){
-  		        window.location = "float.htm?test=results&prev=" + testPrevScore;				
+  		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}		
 	}
 
