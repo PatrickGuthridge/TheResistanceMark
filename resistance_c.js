@@ -410,6 +410,9 @@ function results(){
 	}
 	
 }
+function readMe(){
+	request("README.md");
+}
 function request(src){
 		var request = new XMLHttpRequest();
 		request.onreadystatechange = function() {
