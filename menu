@@ -1,0 +1,18 @@
+<div><select id="benchQu">
+	<option value="qck">Quick Test[500,1000,2000] -Depreciated-</option>
+	<option selected="" value="std">Standardised Test[1000,2000,4000]</option>
+	<option value="ext">Extensive Test[4000,8000,16000,32000]</option>
+	<option value="xtr">Extreme Test[16000,32000,64000,128000] -Non Standard-</option>
+	<option value="fll">Full Test[1000,2000,4000,8000,16000,32000,64000] -Not Recommended-</option>
+	<option value="512">Single Test - 500[512]Computation Sets. -Depreciated-</option>
+	<option value="1024">Single Test - 1000[1024]Computation Sets.</option>
+	<option value="2048">Single Test - 2000[2048]Computation Sets.</option>
+	<option value="4096">Single Test - 4000[4096]Computation Sets.</option>
+	<option value="8192">Single Test - 8000[8192]Computation Sets.</option>
+	<option value="16384">Single Test - 16000[16384]Computation Sets.</option>
+	<option value="32768">Single Test - 32000[32768]Computation Sets. -Not Recommended-</option>
+	<option value="65536">Single Test - 64000[65536]Computation Sets. -Not Recommended-</option>
+	<option value="131072">Single Test - 128000[131072]Computation Sets. -Non Standard-</option>
+</select>
+<button onclick="init();">start</button>
+</div>
