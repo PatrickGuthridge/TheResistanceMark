@@ -16,4 +16,6 @@
 	<option value="cst">Custom Test...</option>
 </select>
 <button onclick="init();">Go</button>
+<p>
+<button onclick="readMe();">Show the readme</button>
 </div>
