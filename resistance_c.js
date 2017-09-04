@@ -442,11 +442,11 @@ window.onload = function() {
 		request("menu");
 	}
 	else if(test == "results"){
-		request("score");
+		request("menu");
 		results();
 		setTimeout(function(){
-			request("menu");
-		},700);
+			request("score");
+		},500);
 	}
 	else if(test == "cst"){
 		request("customForm");
