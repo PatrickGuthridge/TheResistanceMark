@@ -358,7 +358,10 @@ function init() {
     data = document.getElementById('benchQu').value;
     window.location = "index.htm?test=" + data;	
 }
-
+function custom() {
+	data = document.getElementById("form").value;
+	window.location = "index.htm?test=" + data;
+}
 
 
   function start(i){
@@ -441,6 +444,9 @@ window.onload = function() {
 	else if(test == "results"){
 		request("score");
 		results();
+	}
+	else if(test == "cst"){
+		request("customForm");
 	}
 	else{
 		request("test");
@@ -558,5 +564,6 @@ window.onload = function() {
   		        window.location = "index.htm?test=results&prev=" + testPrevScore;				
 		}		
 	}
+
 
 }
