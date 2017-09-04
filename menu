@@ -13,6 +13,7 @@
 	<option value="32768">Single Test - 32000[32768]Computation Sets. -Not Recommended-</option>
 	<option value="65536">Single Test - 64000[65536]Computation Sets. -Not Recommended-</option>
 	<option value="131072">Single Test - 128000[131072]Computation Sets. -Non Standard-</option>
+	<option value="cst">Custom Test...</option>
 </select>
-<button onclick="init();">start</button>
+<button onclick="init();">Go</button>
 </div>

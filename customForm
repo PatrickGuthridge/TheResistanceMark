@@ -1,0 +1,1 @@
+<input id="form"></input><button onclick="custom();">Start</button>
