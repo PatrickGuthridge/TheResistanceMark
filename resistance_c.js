@@ -446,7 +446,7 @@ window.onload = function() {
 		request("score");
 		setTimeout(function(){
 			results();
-		},1000);
+		},550);
 	}
 	else if(test == "cst"){
 		request("customForm");
