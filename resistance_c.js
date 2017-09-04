@@ -444,6 +444,9 @@ window.onload = function() {
 	else if(test == "results"){
 		request("score");
 		results();
+		setTimeout(function(){
+			request("menu");
+		},700);
 	}
 	else if(test == "cst"){
 		request("customForm");
