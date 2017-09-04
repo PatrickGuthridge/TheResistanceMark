@@ -443,10 +443,10 @@ window.onload = function() {
 	}
 	else if(test == "results"){
 		request("menu");
-		request("score");
 		setTimeout(function(){
 			results();
-		},550);
+			request("score");
+		},250);
 	}
 	else if(test == "cst"){
 		request("customForm");
