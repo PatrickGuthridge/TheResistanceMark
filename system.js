@@ -231,6 +231,10 @@ window.onscroll = function(){
     }
 
 }
+function init() {
+    data = document.getElementById('benchQu').value;
+    window.location = "index.htm?test=" + data;	
+}
 window.onload = function(){
 var x = document.getElementById("scrollable").style.height = 2700 + document.body.clientHeight + "px";
 var y = document.getElementById("view8").style.width = document.body.clientWidth + "px";
