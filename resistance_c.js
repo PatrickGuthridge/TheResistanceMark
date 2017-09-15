@@ -439,7 +439,7 @@ if(testPrevScore == null){
 window.onload = function() {
 	window.history.pushState("index.htm", "","index.htm");
 	document.title = "TheResistanceMark Beta";
-	if(test == 0 || test == null && legacy != 1){
+	if(test == null && legacy != 1 || test == 0 && legacy != 1){
 		window.location = "display.html"
 	}
 	if(legacy == 1){
