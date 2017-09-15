@@ -1,7 +1,14 @@
 //Multithread.js 
 !function() {
 
+	var URL = window.URL || window.webkitURL;
+	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
+window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
+	}
 
+	if(!window.Worker) {
+window.alert('This browser is not supported.');		throw new Error('This browser does not support Web Workers');
+}
 	function Multithread(threads) {
 		this.threads = Math.max(2, threads | 0);
 		this._queue = [];
