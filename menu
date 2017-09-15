@@ -1,4 +1,7 @@
-<div><select id="benchQu">
+<div>
+<a><b>BE WARNED: NEW FRONT PAGE EXPERIENCE COMING SOON</b>. This page might not work well for the next few days.</a>
+<br>
+<select id="benchQu">
 	<option value="qck">Quick Test[500,1000,2000] -Depreciated-</option>
 	<option selected="" value="std">Standardised Test[1000,2000,4000]</option>
 	<option value="ext">Extensive Test[4000,8000,16000,32000]</option>
