@@ -446,7 +446,7 @@ window.onload = function() {
 		request("legacyMenu");
 	}
 	else if(test == "results"){
-		request("menu");
+		request("legacyMenu");
 		setTimeout(function(){
 			results();
 			request("score");
