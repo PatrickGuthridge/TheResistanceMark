@@ -1,14 +1,6 @@
 //Multithread.js 
 !function() {
 
-	var URL = window.URL || window.webkitURL;
-	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
-window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
-	}
-
-	if(!window.Worker) {
-window.alert('This browser is not supported.');		throw new Error('This browser does not support Web Workers');
-	}
 
 	function Multithread(threads) {
 		this.threads = Math.max(2, threads | 0);
@@ -435,6 +427,7 @@ function request(src){
 }
 var test = uriParameter("test");
 var getCurrent = uriParameter("current");
+var legacy = uriParameter("legacy");
 var testCurrent = 0;
 if(getCurrent != null){
 	testCurrent = parseInt(getCurrent);
@@ -446,8 +439,11 @@ if(testPrevScore == null){
 window.onload = function() {
 	window.history.pushState("index.htm", "","index.htm");
 	document.title = "TheResistanceMark Beta";
-	if(test == 0 || test == null){
-		request("menu");
+	if(test == 0 || test == null && legacy != 1){
+		window.location = "display.html"
+	}
+	if(legacy == 1){
+		request("legacyMenu");
 	}
 	else if(test == "results"){
 		request("menu");

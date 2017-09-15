@@ -1,5 +1,5 @@
 <div>
-<a><b>BE WARNED: NEW FRONT PAGE EXPERIENCE COMING SOON</b>. This page might not work well for the next few days.</a>
+<a><b>You're viewing the legacy front page</b>. This page might not work well in the upcoming future.</a>
 <br>
 <select id="benchQu">
 	<option value="qck">Quick Test[500,1000,2000] -Depreciated-</option>

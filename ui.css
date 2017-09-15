@@ -1,0 +1,223 @@
+body{
+  font-family: Sans-Serif;
+  color: white;
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 0px !important;
+  left: 0px !important;
+  background-color: black;
+  text-align: center !important;
+}
+#footer{
+  position: fixed;
+  bottom: 0px;
+}
+#benchQu{  
+  top: 50%;
+  left: 50%;
+  background: black;
+  color: white;
+  opacity: 0.75;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  border: 0;
+  width: 500px;
+  display: block;
+  visibility: visible;
+  animation: blurIn 2s ease-in-out;
+  padding: 10px;
+}
+#gButton{
+  top: 50%;
+  left: 50%;
+  background: green;
+  color: white;
+  opacity: 0.75;
+  border: 0;
+  position: fixed;
+  transform: translate(250px,-50%);
+  display: block;
+  visibility:visible;
+  transition: opacity 0.5s;
+  animation: blurIn 2s ease-in-out;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.viewWindow{
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #2b2b3c;
+  position: fixed;
+  z-index: -2;
+}
+
+#scrollable{
+    position: absolute;
+    width: 1px;
+}
+#view1{
+  top: 40%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  animation: zoomOut 2.25s linear;
+  font-size: 90px;
+  color: black;
+}
+.testBrowser{
+  text-align: center;
+  position: fixed;
+  opacity: 1;
+  transition: filter 1.25s;
+  z-index: -1;
+}
+.resistanceMark{
+  position: unset;
+  opacity: 0;
+  transition: opacity 1.5s;
+  z-index: -1;
+}
+#view2{
+  width:100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+#view3{
+  color: black;
+  font-size: 22px;
+  left: 50%;  
+  position: absolute;
+  bottom: 0px;
+  transform: translateX(-50%);
+  animation: blurIn 1.5s ease-out 1s backwards;
+}
+.background-Vivaldi{
+  background: url(browser.png) !important;
+  background-size: cover;
+  animation: zoom1 2.25s ease;
+  transform: scale(1.25)
+}
+#firefoxLogo, #chromeLogo, #operaLogo{
+  width: 250px;
+  position: fixed;
+  top: 50%;
+  opacity: 0;
+  left: 0%;
+  transform: translate(0,-50%);
+  transition: transform 0.25s;
+  display: none;
+}
+#firefoxLogo:hover, #chromeLogo:hover, #operaLogo:hover{
+  transform: translate(0,-50%) scale(0.9);
+}
+#view4{
+  position: fixed;
+  color: darkblue;
+  font-size: 32px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.25s;
+}
+#scrollButton{
+  background: url(button.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  border: 0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: transform 0.5s;
+}
+#view6{
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  color: blue;
+  transform: translate(-50%,-50%);
+  font-size: 110px;
+  transition: opacity 1s;
+  opacity: 0;
+  z-index: -1;
+}
+#view7{
+  height: 100%;
+  width: 0px;
+  background-color: #181828;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  display: block;
+  position: fixed;
+}
+#picky{
+  width: 100%;
+  height: 75px;
+  background: #2b2b95;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  display: none;
+  font-size: 50px;
+  text-align: left;
+  animation: scaleYIn 0.75s ease-in 2s backwards;
+}
+.view5a{
+  background: black;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  left: 50%;
+  opacity: 0;
+  z-index: -1;
+}
+.view5b{
+  background: black;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top : 0px;
+  right: 50%;  
+  opacity: 0;
+  z-index: -1
+}
+#view8{
+  position: absolute;
+  left: 0px;
+  top: 2750px;
+  font-size: 75px;
+}
+@keyframes scaleYIn {
+  from{
+    transform: scale(1,0)
+  }
+}
+@keyframes zoomOut {
+  from{
+    opacity: 0;
+    transform: scale(5);
+    color: white;
+  }
+}
+@keyframes zoom1{
+  from{
+    opacity: 0;
+    transform: scale(0.5)
+  }
+}
+@keyframes blurIn{
+  from{
+    opacity: 0;
+    filter: blur(50px)
+  }
+}
