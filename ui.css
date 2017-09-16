@@ -8,7 +8,13 @@ body{
   text-align: center !important;
   overflow-x: hidden;
 }
-.wait{
+body.wait{
+display: none;
+background-color: #2b2b3c;
+background-image: url("spinner.png");
+background-position: center;
+}
+div.wait{
 display: none;
 background-color: #2b2b3c;
 background-image: url("spinner.png");
