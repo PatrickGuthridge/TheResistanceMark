@@ -13,13 +13,6 @@ window.alert('This browser is not supported.');		throw new Error('This browser d
 
 var scrPXT = 0;
 function uA() {if(navigator.userAgent.includes("Edge")){return true;}else{return false;}}
-setTimeout(function(){
-	var x = document.getElementsByClassName("testBrowser")[0];
-	var y = document.getElementsByClassName("resistanceMark")[0];
-	x.style.filter = "blur(75px)";
-	y.style.opacity = "1";
-	
-},2150);
 function exec(){
 	scrPXT++;
 }
@@ -253,5 +246,12 @@ var z = document.getElementById("bottomContent").style.left = (document.body.cli
 document.body.className = "";
 document.getElementById("scrollDisplay").className = "";
 	document.body.scrollTop = 0;
+setTimeout(function(){
+	var x = document.getElementsByClassName("testBrowser")[0];
+	var y = document.getElementsByClassName("resistanceMark")[0];
+	x.style.filter = "blur(75px)";
+	y.style.opacity = "1";
+	
+},2150);
 }
 
