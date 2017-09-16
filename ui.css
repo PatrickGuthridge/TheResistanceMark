@@ -5,9 +5,14 @@ body{
   position: absolute;
   top: 0px !important;
   left: 0px !important;
-  background-color: black;
   text-align: center !important;
   overflow-x: hidden;
+}
+.wait{
+display: none;
+background-color: #2b2b3c;
+background-image: url("spinner.png");
+background-position: center;
 }
 #footer{
   position: fixed;
