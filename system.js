@@ -248,6 +248,6 @@ var y = document.getElementById("view8").style.width = document.body.clientWidth
 		picky.innerHTML = '<img src="noedge.png" style="height: 55px"><a>Look strange?</a><b><i>Ditch Edge</i></b>';
 		picky.style.display = "block";
 	}
+document.body.className = "";
 }
-var noEdge = new Image();
-noEdge.src = "noedge.png";
+
