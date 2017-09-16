@@ -1,6 +1,8 @@
 # TheResistanceMark
 ***Please note that this software is currently still under major development and therfore this file may not be up-to-date or accurate.***
 
+Thankyou to all the respective parties and developers who have made this project possible. A list of dependancies will be added soon.
+
 ResistanceMark is an open-source web browser benchmark designed to test the speed at which two asynchronous WebWorkers threads can run simultaneously.
 Scores are calculated using the ratio between the return values of the two threads once the user-defined amount of iterations is reached.
 Note that lower scores are better [with 3 being perfect :-] and score will vary across computers. Go to the Github.io page for a full score analysis (coming soon, be patient). 
@@ -34,6 +36,6 @@ This project soon will see great developments, in versatility, accuracy and aest
 This test will also soon broaden out to a latency tester (which Chrome seems to be smashing) and a separate HTML and CSS engine test.
 Hopefully it will become something that will play a part in the brewing browser battle, as Multithreading, stability and speed are things that are expected for the modern web!
 
-*Last Updated 5/09/17;
+*Last Updated 17/09/17;
 If the readme file needs updating, please file an issue.*
 
