@@ -240,7 +240,7 @@ function init() {
     window.location = "index.htm?test=" + data;	
 }
 window.onload = function(){
-document.body.scrollTop = 0;
+
 var x = document.getElementById("scrollable").style.height = 2700 + document.body.clientHeight + "px";
 var y = document.getElementById("view8").style.width = document.body.clientWidth + "px";
 var z = document.getElementById("bottomContent").style.left = (document.body.clientWidth / 2) + "px";
@@ -252,5 +252,6 @@ var z = document.getElementById("bottomContent").style.left = (document.body.cli
 	}
 document.body.className = "";
 document.getElementById("scrollDisplay").className = "";
+	document.body.scrollTop = 0;
 }
 
