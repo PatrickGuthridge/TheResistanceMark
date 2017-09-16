@@ -59,9 +59,11 @@ window.onscroll = function(){
 		var element1 = document.getElementById("scrollButton")
 		if(document.body.scrollTop > 10){
 			element1.style.transform = "rotate(180deg)";
+			element1.style.display = "block";
 		}
 		else{
 			element1.style.transform = "rotate(360deg)";
+			element1.style.display = "none";
 		}
 		var element1 = document.getElementById("firefoxLogo");	
 		var element2 = document.getElementById("chromeLogo");	
