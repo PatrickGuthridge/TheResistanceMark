@@ -227,10 +227,10 @@ window.onscroll = function(){
 			element4.style.width = "0px";
 		}
 		if(document.body.scrollTop == 2700){
-			document.getElementById("view9a").style.opacity = 1;
+			document.getElementById("bottomContent").style.opacity = 1;
 		}
 		else{
-			document.getElementById("view9a").style.opacity = 0;			
+			document.getElementById("bottomContent").style.opacity = 0;			
 		}
     }
 
