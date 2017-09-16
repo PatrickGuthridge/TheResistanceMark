@@ -249,5 +249,6 @@ var y = document.getElementById("view8").style.width = document.body.clientWidth
 		picky.style.display = "block";
 	}
 document.body.className = "";
+document.getElementById("scrollDisplay").className = "";
 }
 
