@@ -27,6 +27,7 @@ display: none;
     font-size: 22px;
     opacity: 0.25;
     transform: translate(-50%,0);
+    transition: opacity 0.5s;
 }
 #footer{
   position: fixed;
