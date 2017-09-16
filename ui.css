@@ -10,9 +10,8 @@ body{
 }
 body.wait{
 background-color: #2b2b3c;
-}
-img.wait{
-display: block !important;
+background-image: url("spinner.png");
+background-position: center;
 }
 div.wait{
 display: none;
