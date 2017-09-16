@@ -47,7 +47,7 @@ window.alert('This browser is not supported.');		throw new Error('This browser d
 		header: null,
 
 		// Speed & Easing
-		speed: 500,
+		speed: 1500,
 		offset: 0,
 		easing: 'easeInOutCubic',
 		customEasing: null,
