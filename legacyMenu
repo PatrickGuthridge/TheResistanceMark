@@ -22,4 +22,5 @@
 <p>
 <button onclick="readMe();">Show the readme</button>
 <button onclick="scoreAnalysis();">Score Analysis</button>
+<a href="display.html"><button>Return to New Frontpage</button></a>
 </div>
