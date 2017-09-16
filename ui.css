@@ -10,7 +10,7 @@ body{
 }
 body.wait{
 background-color: #2b2b3c;
-background-image: url("spinner.png");
+background-image: url("loading.png");
 background-position: center;
 }
 div.wait{
