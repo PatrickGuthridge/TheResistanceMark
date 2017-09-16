@@ -164,6 +164,7 @@ display: none;
   position: fixed;
   bottom: 10px;
   right: 10px;
+  animation: fadeIn 0.5s linear;
   transition: transform 0.5s;
   display: none;
 }
@@ -248,5 +249,10 @@ display: none;
   from{
     opacity: 0;
     filter: blur(50px)
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
   }
 }
