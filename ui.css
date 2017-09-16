@@ -19,6 +19,15 @@ body.wait{
 div.wait{
 display: none;
 }
+#bottomContent{
+    position: absolute;
+    top: 2900px;
+    background: white;
+    color: blue;
+    font-size: 22px;
+    opacity: 0.25;
+    transform: translate(-50%,0);
+}
 #footer{
   position: fixed;
   bottom: 0px;
