@@ -226,8 +226,8 @@ window.onscroll = function(){
 		else{
 			element4.style.width = "0px";
 		}
-		if(document.body.scrollTop == 2700){
-			document.getElementById("bottomContent").style.opacity = 1;
+		if(document.body.scrollTop > 2700){
+			document.getElementById("bottomContent").style.opacity = 0.25;
 		}
 		else{
 			document.getElementById("bottomContent").style.opacity = 0;			
