@@ -1,4 +1,8 @@
-	var URL = window.URL || window.webkitURL;
+var noEdge = new Image();
+noEdge.src = "noedge.png";
+var viv = new Image();
+viv.src = "browser.png";
+var URL = window.URL || window.webkitURL;
 	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
 window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
 	}
