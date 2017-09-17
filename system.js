@@ -867,4 +867,4 @@ setTimeout(function(){
 
 
 window.onload = onloadFrontpage
-window.onscroll = onScrollfrontpage
+window.onscroll = onscrollFrontpage
