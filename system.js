@@ -590,6 +590,7 @@ function exec(){
 window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
+	    	window.history.pushState("display.htm", "","display.htm");
 	        if(document.body.scrollTop < 5){
 			 document.title = "Test Your Browser...";
 		}
