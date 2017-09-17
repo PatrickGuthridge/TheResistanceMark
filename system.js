@@ -824,6 +824,7 @@ function github() {
 function init() {
     data = document.getElementById('benchQu').value;
     document.getElementById("wait").className = "to";
+    document.body.style.overflow = "hidden";
     setTimeout(function(){
   	  window.location = "index.htm?test=" + data;	
     },1050);    
