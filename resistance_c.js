@@ -363,7 +363,7 @@ function custom() {
 
 
   function start(i){
-    benchT = benchC / 1024 * 9;
+    benchT = benchC / 1024 * 7;
     r++;
     if(i == 3 && r <= benchC){
        setTimeout(function(){q(i,x,y,z);},550);
