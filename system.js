@@ -591,10 +591,12 @@ window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
 	        if(document.body.scrollTop < 5){
+			document.getElementById("back2").style.height = document.body.scrollTop + "px";
 	    		window.history.pushState("display.html#/", "","display.html#/");
 			 document.title = "Test Your Browser...";
 		}
 	    	else{
+			document.getElementById("back2").style.height = "0px";
 			window.history.pushState("display.html#/scroll", "","display.html#/scroll");
 		}
 		var value1 = document.body.scrollTop + 50;
