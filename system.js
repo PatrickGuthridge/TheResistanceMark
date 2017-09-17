@@ -591,11 +591,11 @@ window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
 	        if(document.body.scrollTop < 5){
-	    		window.history.pushState("display.htm", "","display.htm");
+	    		window.history.pushState("display.html#/", "","display.html#/");
 			 document.title = "Test Your Browser...";
 		}
 	    	else{
-			window.history.pushState("display.htm#/scroll", "","display.htm#/scroll");
+			window.history.pushState("display.html#/scroll", "","display.html#/scroll");
 		}
 		var value1 = document.body.scrollTop + 50;
 		var value2 = document.body.scrollTop / 10;
@@ -810,7 +810,7 @@ window.onscroll = function(){
 
 }
 function github() {
-	window.history.pushState("display.htm#/github", "","display.htm#/github");
+	window.history.pushState("display.html#/github", "","display.html#/github");
 	setTimeout(function(){
 		window.location = "https://github.com/QWERTYUIOPYOZO/TheResistanceMark#";
 	}, 500);
@@ -820,6 +820,7 @@ function init() {
     window.location = "index.htm?test=" + data;	
 }
 window.onload = function(){
+window.history.pushState("display.html#/", "","display.html#/");
 document.title = "Test Your Browser..."
 var x = document.getElementById("scrollable").style.height = 2700 + document.body.clientHeight + "px";
 var y = document.getElementById("view8").style.width = document.body.clientWidth + "px";
