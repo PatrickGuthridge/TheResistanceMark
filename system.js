@@ -816,7 +816,7 @@ window.onscroll = function(){
 
 }
 function scrubPicky(){
-	document.getElementById("picky").innerHTML = "";
+	document.getElementById("picky").outerHTML = "";
 }
 function github() {
 	window.history.pushState("display.html#/github", "","display.html#/github");
@@ -841,7 +841,7 @@ var z = document.getElementById("bottomContent").style.left = (document.body.cli
 	var x = uA();
 	if(x == true){
 		var picky = document.getElementById("picky");
-		picky.innerHTML = '<img src="noedge.png" style="height: 55px"><i>Look strange?</i><b>EdgeHTML and Edge Scrolling are not yet fully supported.    </b><a style="color: red" onclick="scrubPicky()">Close</a>';
+		picky.innerHTML = '<img src="noedge.png" style="height: 55px"><i>Look strange?</i><b>EdgeHTML and Edge Scrolling are not yet fully supported.    </b><a style="color: red; background: white;" onclick="scrubPicky()">Close</a>';
 		picky.style.display = "block";
 	}
 document.body.className = "";
