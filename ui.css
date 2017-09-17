@@ -8,6 +8,25 @@ body{
   text-align: center !important;
   overflow-x: hidden;
 }
+#wait{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+  animation: blurIn 0.5s;
+}
+.to{
+    display: block !important;
+    background-color: #2b2b3c;
+    background-image: url("loading.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-attachment: fixed;
+}
 body.wait{
     background-color: #2b2b3c;
     background-image: url("loading.png");
