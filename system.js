@@ -811,6 +811,9 @@ window.onscroll = function(){
 }
 function github() {
 	window.history.pushState("display.htm#/github", "","display.htm#/github");
+	setTimeout(function(){
+		window.location = "https://github.com/QWERTYUIOPYOZO/TheResistanceMark#";
+	}, 500);
 }
 function init() {
     data = document.getElementById('benchQu').value;
