@@ -20,7 +20,7 @@ body{
 }
 .to{
     display: block !important;
-    background-color: #2b2b3c;
+    background-color: #181828;
     background-image: url("loading.png");
     background-position-x: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body{
     background-attachment: fixed;
 }
 body.wait{
-    background-color: #2b2b3c;
+    background-color: #181828;
     background-image: url("loading.png");
     background-position-x: center;
     background-repeat: no-repeat;
