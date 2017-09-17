@@ -587,7 +587,27 @@ function uA() {if(navigator.userAgent.includes("Edge")){return true;}else{return
 function exec(){
 	scrPXT++;
 }
-window.onscroll = function(){
+function scrubPicky(){
+	document.getElementById("picky").outerHTML = "";
+}
+function github() {
+	window.history.pushState("display.html#/github", "","display.html#/github");
+	setTimeout(function(){
+		window.location = "https://github.com/QWERTYUIOPYOZO/TheResistanceMark#";
+	}, 500);
+}
+function init() {
+    data = document.getElementById('benchQu').value;
+    document.getElementById("wait").className = "to";
+    document.body.style.overflow = "hidden";
+    setTimeout(function(){
+  	  window.location = "index.htm?test=" + data;	
+    },1050);    
+}
+
+
+
+function onscrollFrontpage(){
 
     if (document.body.scrollTop >= 0) {	
 	        if(document.body.scrollTop < 5){
@@ -815,24 +835,11 @@ window.onscroll = function(){
     }
 
 }
-function scrubPicky(){
-	document.getElementById("picky").outerHTML = "";
-}
-function github() {
-	window.history.pushState("display.html#/github", "","display.html#/github");
-	setTimeout(function(){
-		window.location = "https://github.com/QWERTYUIOPYOZO/TheResistanceMark#";
-	}, 500);
-}
-function init() {
-    data = document.getElementById('benchQu').value;
-    document.getElementById("wait").className = "to";
-    document.body.style.overflow = "hidden";
-    setTimeout(function(){
-  	  window.location = "index.htm?test=" + data;	
-    },1050);    
-}
-window.onload = function(){
+
+
+
+
+function onloadFrontpage(){
 window.history.pushState("display.html#/", "","display.html#/");
 document.title = "Test Your Browser..."
 var x = document.getElementById("scrollable").style.height = 2700 + document.body.clientHeight + "px";
@@ -856,3 +863,8 @@ setTimeout(function(){
 },2150);
 }
 
+
+
+
+window.onload = onloadFrontpage
+window.onscroll = onScrollfrontpage
