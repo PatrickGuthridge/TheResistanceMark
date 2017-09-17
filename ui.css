@@ -166,7 +166,7 @@ display: none;
   transform: rotate(0deg);
   right: 10px;
   animation: twistIn 0.5s linear;
-  transition: transform 0.5s;
+  transition: opacity 0.5s;
   display: none;
 }
 #view6{
