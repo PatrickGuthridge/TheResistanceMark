@@ -39,7 +39,9 @@ div.wait{
 display: none;
 }
 #back2{
-  background: red;
+  background: url(purple-matrix-2117.jpg);
+  background-position: center;
+  background-size: cover;
   width:100%;
   position: fixed;
   left: 0px;
