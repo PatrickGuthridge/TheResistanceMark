@@ -1,13 +1,68 @@
 body{
-  font-family: Sans-Serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   scroll-behavior: smooth;
   position: absolute;
   top: 0px !important;
   left: 0px !important;
-  background-color: black;
   text-align: center !important;
   overflow-x: hidden;
+}
+#wait{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+  animation: blurIn 0.75s;
+}
+.to{
+    display: block !important;
+    background-color: #181828;
+    background-image: url("loading.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+body.wait{
+    background-color: #181828;
+    background-image: url("loading.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+div.wait{
+display: none;
+}
+#back2{
+  background: red;
+  width:100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 0px;
+  z-index: -1;
+}
+#bottomContent{
+    position: absolute;
+    top: 2900px;
+    background: white;
+    color: blue;
+    font-size: 22px;
+    opacity: 0.25;
+    transform: translate(-50%,0);
+    transition: opacity  0.5s, padding 0.5s, box-shadow 0.5s;
+    padding: 10px;
+    box-shadow: 1px 1px 55px rgba(255,255,255,1);
+}
+#bottomContent:hover{
+    opacity: 0.75 !important;
+    padding: 0px;
+    box-shadow: 1px 1px 0px rgba(255,255,255,1);
 }
 #footer{
   position: fixed;
@@ -51,7 +106,7 @@ body{
   height: 100%;
   left: 0px;
   top: 0px;
-  background: #2b2b3c;
+  background: #181828;
   position: fixed;
   z-index: -2;
 }
@@ -136,8 +191,11 @@ body{
   border: 0;
   position: fixed;
   bottom: 10px;
+  transform: rotate(0deg);
   right: 10px;
-  transition: transform 0.5s;
+  animation: twistIn 0.5s linear;
+  transition: opacity 0.5s;
+  display: none;
 }
 #view6{
  position: fixed;
@@ -220,5 +278,11 @@ body{
   from{
     opacity: 0;
     filter: blur(50px)
+  }
+}
+@keyframes twistIn{
+  from{
+    transform: rotate(180deg);
+    opacity: 0;
   }
 }
