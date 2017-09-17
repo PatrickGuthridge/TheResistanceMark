@@ -590,6 +590,9 @@ function exec(){
 window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
+	        if(document.body.scrollTop < 5){
+			 document.title = "Test Your Browser...";
+		}
 		var value1 = document.body.scrollTop + 50;
 		var value2 = document.body.scrollTop / 10;
 		var value3 = 15 / document.body.scrollTop;
@@ -795,9 +798,6 @@ window.onscroll = function(){
 		else{
 			document.getElementById("bottomContent").style.opacity = 0;			
 		}
-    }
-    else{
-	    document.title = "Test Your Browser...";
     }
 
 }
