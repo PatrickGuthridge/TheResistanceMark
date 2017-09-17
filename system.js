@@ -800,7 +800,7 @@ window.onscroll = function(){
 		element3.style.opacity = 0;	
 		}
 		if(document.body.scrollTop > 1980){
-			document.title = "Can your browser top the rest?";
+			document.title = "Does your browser top the rest?";
 			element4.style.width = value3 + "px";
 		}
 		else{
@@ -814,6 +814,9 @@ window.onscroll = function(){
 		}
     }
 
+}
+function scrubPicky(){
+	document.getElementById("picky").innerHTML = "";
 }
 function github() {
 	window.history.pushState("display.html#/github", "","display.html#/github");
@@ -838,7 +841,7 @@ var z = document.getElementById("bottomContent").style.left = (document.body.cli
 	var x = uA();
 	if(x == true){
 		var picky = document.getElementById("picky");
-		picky.innerHTML = '<img src="noedge.png" style="height: 55px"><a>Look strange?</a><b><i>Ditch Edge</i></b>';
+		picky.innerHTML = '<img src="noedge.png" style="height: 55px"><i>Look strange?</i><b>EdgeHTML and Edge Scrolling are not yet fully supported.    </b><a style="color: red" onclick="scrubPicky()">Close</a>';
 		picky.style.display = "block";
 	}
 document.body.className = "";
