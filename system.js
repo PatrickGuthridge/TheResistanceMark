@@ -826,7 +826,7 @@ function init() {
     document.getElementById("wait").className = "to";
     setTimeout(function(){
   	  window.location = "index.htm?test=" + data;	
-    },750);    
+    },1050);    
 }
 window.onload = function(){
 window.history.pushState("display.html#/", "","display.html#/");
