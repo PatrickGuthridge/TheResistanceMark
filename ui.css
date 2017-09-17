@@ -16,7 +16,7 @@ body{
   height: 100%;
   z-index: 0;
   display: none;
-  animation: blurIn 0.5s;
+  animation: blurIn 0.75s;
 }
 .to{
     display: block !important;
