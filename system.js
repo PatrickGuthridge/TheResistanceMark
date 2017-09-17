@@ -590,9 +590,12 @@ function exec(){
 window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
-	    	window.history.pushState("display.htm", "","display.htm");
 	        if(document.body.scrollTop < 5){
+	    		window.history.pushState("display.htm", "","display.htm");
 			 document.title = "Test Your Browser...";
+		}
+	    	else{
+			window.history.pushState("display.htm#/scroll", "","display.htm#/scroll");
 		}
 		var value1 = document.body.scrollTop + 50;
 		var value2 = document.body.scrollTop / 10;
@@ -805,6 +808,9 @@ window.onscroll = function(){
 		}
     }
 
+}
+function github() {
+	window.history.pushState("display.htm#/github", "","display.htm#/github");
 }
 function init() {
     data = document.getElementById('benchQu').value;
