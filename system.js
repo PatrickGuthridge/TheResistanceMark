@@ -636,6 +636,9 @@ window.onscroll = function(){
 		var element1 = document.getElementById("firefoxLogo");	
 		var element2 = document.getElementById("chromeLogo");	
 		var element3 = document.getElementById("operaLogo");
+	    	if(document.body.scrollTop > 5 && document.body.scrollTop < 630){
+			document.title = "Compare the best...";
+		}
 		if(document.body.scrollTop < 50){
 			element1.style.display = "none";
 			element2.style.display = "none";
@@ -644,7 +647,6 @@ window.onscroll = function(){
 			var valueA = 0;
 		}
 		else{
-			document.title = "Compare the best...";
 			element1.style.display = "block";
 			element2.style.display = "block";
 			element3.style.display = "block";			
@@ -698,8 +700,10 @@ window.onscroll = function(){
 		var element2 = document.getElementsByClassName("view5b");
 		var element3 = document.getElementById("view6");
 		var element4 = document.getElementById("view7")
+	    	if(document.body.scrollTop > 630 && document.body.scrollTop < 1980){
+			document.title = "Async adds zest...";
+		}		
 		if(document.body.scrollTop > 630){
-			document.title = "Async Adds Zest...";
 			var value1 = (document.body.scrollTop - 630) / 750;
 		}
 		else{
