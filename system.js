@@ -823,7 +823,10 @@ function github() {
 }
 function init() {
     data = document.getElementById('benchQu').value;
-    window.location = "index.htm?test=" + data;	
+    document.getElementById("wait").className = "to";
+    setTimeout(function(){
+  	  window.location = "index.htm?test=" + data;	
+    },750);    
 }
 window.onload = function(){
 window.history.pushState("display.html#/", "","display.html#/");
