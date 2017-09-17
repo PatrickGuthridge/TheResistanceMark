@@ -598,7 +598,7 @@ window.onscroll = function(){
 			window.history.pushState("display.html#/scroll", "","display.html#/scroll");
 		}
 	    	if(document.body.scrollTop > 5){
-			document.getElementById("back2").style.height = (document.body.scrollTop / 2) + "px";
+			document.getElementById("back2").style.height = (document.body.scrollTop / 1.5) + "px";
 		}
 	    	else{
 			document.getElementById("back2").style.height = "0px";
