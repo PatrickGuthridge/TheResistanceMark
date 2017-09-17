@@ -587,11 +587,6 @@ function uA() {if(navigator.userAgent.includes("Edge")){return true;}else{return
 function exec(){
 	scrPXT++;
 }
-var autoScroll ={
-	top: function(){
-		document.body.scrollTo(document.body.scrollTopMax,0);
-	}
-}
 window.onscroll = function(){
 
     if (document.body.scrollTop >= 0) {	
@@ -629,12 +624,11 @@ window.onscroll = function(){
 		}
 		var element1 = document.getElementById("scrollButton")
 		if(document.body.scrollTop > 10){
-			element1.style.transform = "rotate(180deg)";
 			element1.style.display = "block";
+			element1.style.opacity = 1;
 		}
 		else{
-			element1.style.transform = "rotate(360deg)";
-			element1.style.display = "none";
+			element1.style.opacity = 0;
 		}
 		var element1 = document.getElementById("firefoxLogo");	
 		var element2 = document.getElementById("chromeLogo");	
