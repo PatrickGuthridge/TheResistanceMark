@@ -235,7 +235,7 @@ display: none;
   animation: scaleYIn 0.75s ease-in 2s backwards;
 }
 .view5a{
-  background: white;
+  background: black;
   height: 100%;
   width: 150px;
   position: fixed;
@@ -244,7 +244,7 @@ display: none;
   z-index: -1;
 }
 .view5b{
-  background: white;
+  background: black;
   height: 100%;
   width: 150px;
   position: fixed;
