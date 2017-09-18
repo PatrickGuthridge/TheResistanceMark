@@ -28,10 +28,12 @@ body{
 #scrollMonitor{
   position: fixed;
   height: 2px;
-  colour: blue;
+  background-color: blue;
   top: 0px;
   left: 0px;
   opacity: 0.75;
+  z-index: 0;
+  transition: width 0.25s;
 }
 #wait{
   position: fixed;
