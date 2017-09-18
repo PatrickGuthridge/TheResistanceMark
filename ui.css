@@ -194,13 +194,13 @@ display: none;
 #view4{
   position: fixed;
   color: red;
-  font-size: 64px;
+  font-size: 48px;
   top:50%;
-  left:50%;
+  left:40%;
   transform: translate(-50%,-50%);
   opacity: 0;
   z-index: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.2s;
 }
 #scrollButton{
   background: url(button.png);
