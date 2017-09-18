@@ -363,7 +363,7 @@ function custom() {
 
 
   function start(i){
-    benchT = benchC / 1024 * 11;
+    benchT = benchC / 1024 * 10;
     r++;
     if(i == 3 && r <= benchC){
        setTimeout(function(){q(i,x,y,z);},550);
@@ -444,7 +444,7 @@ if(testPrevScore == null){
 }
 window.onload = function() {
 	window.history.pushState("index.htm", "","index.htm");
-	document.title = "TheResistanceMark Beta";
+	document.title = "TheResistanceMark Alpha";
 	if(test == null && legacy != 1 || test == 0 && legacy != 1){
 		window.location = "display.html"
 	}
