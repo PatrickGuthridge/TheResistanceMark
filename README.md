@@ -2,6 +2,9 @@
 ***Please note that this software is currently still under major development and therfore this file may not be up-to-date or accurate.***
 
 Thankyou to all the respective parties and developers who have made this project possible. A list of dependancies will be added soon.
+For now: Image credits:
+https://free4kwallpaper.com/wp-content/uploads/2016/01/Blue-Web-Abstract-4K-Wallpapers.jpg
+http://wallpapers-and-backgrounds.net/wp-content/uploads/2016/06/black-abstract-4k-background_1.jpg
 
 ResistanceMark is an open-source web browser benchmark designed to test the speed at which two asynchronous WebWorkers threads can run simultaneously.
 Scores are calculated using the ratio between the return values of the two threads once the user-defined amount of iterations is reached.

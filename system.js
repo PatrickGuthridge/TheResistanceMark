@@ -2,6 +2,10 @@ var noEdge = new Image();
 noEdge.src = "noedge.png";
 var viv = new Image();
 viv.src = "browser.png";
+var vectori = new Image();
+vectori.src = "bgVector.jpg";
+var vectorii = new Image();
+vectorii.src = "endVector.jpg";
 var URL = window.URL || window.webkitURL;
 	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
 window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
@@ -604,7 +608,9 @@ function init() {
   	  window.location = "index.htm?test=" + data;	
     },1050);    
 }
-
+function to() {
+    document.getElementById("wait").className = "to";	
+}
 
 
 function onscrollFrontpage(){
@@ -866,5 +872,6 @@ setTimeout(function(){
 
 
 
-window.onload = onloadFrontpage
-window.onscroll = onscrollFrontpage
+window.onload = onloadFrontpage;
+window.onscroll = onscrollFrontpage;
+window.onbeforeunload = to;

@@ -1,5 +1,21 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v11/cbAbzEjxTdN5KKmS-gA0tSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-k_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: white;
   scroll-behavior: smooth;
   position: absolute;
@@ -34,12 +50,16 @@ body.wait{
     background-repeat: no-repeat;
     background-position-y: center;
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 div.wait{
 display: none;
 }
 #back2{
-  background: red;
+  background-color: lightgrey;
+  background-image: url(bgVector.jpg);
+  background-position: center;
+  background-size: cover;
   width:100%;
   position: fixed;
   left: 0px;
@@ -174,14 +194,14 @@ display: none;
 }
 #view4{
   position: fixed;
-  color: darkblue;
-  font-size: 32px;
+  color: red;
+  font-size: 48px;
   top:50%;
-  left:50%;
+  left:40%;
   transform: translate(-50%,-50%);
   opacity: 0;
   z-index: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.2s;
 }
 #scrollButton{
   background: url(button.png);
@@ -211,7 +231,11 @@ display: none;
 #view7{
   height: 100%;
   width: 0px;
-  background-color: #181828;
+  background-color: black;
+  background-image: url(endVector.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0px;
   left: 50%;
   transform: translate(-50%);
