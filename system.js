@@ -874,4 +874,4 @@ setTimeout(function(){
 
 window.onload = onloadFrontpage;
 window.onscroll = onscrollFrontpage;
-window.onunload = to;
+window.onbeforeunload = to;
