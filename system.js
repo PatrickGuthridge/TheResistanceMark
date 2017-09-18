@@ -1,4 +1,4 @@
-var noEdge = new Image();
+﻿var noEdge = new Image();
 noEdge.src = "noedge.png";
 var viv = new Image();
 viv.src = "browser.png";
@@ -616,6 +616,8 @@ function to() {
 function onscrollFrontpage(){
 
     if (document.body.scrollTop >= 0) {	
+			var value1 = document.body.scrollTop / document.body.scrollTopMax * 100;
+			document.getElementById("scrollMonitor").style.width = value1 + "%";
 	        if(document.body.scrollTop < 5){
 	    		window.history.pushState("display.html#/", "","display.html#/");
 			 document.title = "Test Your Browser...";

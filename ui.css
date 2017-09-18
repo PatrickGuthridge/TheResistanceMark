@@ -23,6 +23,15 @@ body{
   left: 0px !important;
   text-align: center !important;
   overflow-x: hidden;
+  scrollbar-base-color: black;
+}
+#scrollMonitor{
+  position: fixed;
+  height: 2px;
+  colour: blue;
+  top: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 #wait{
   position: fixed;
