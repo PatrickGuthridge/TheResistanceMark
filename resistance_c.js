@@ -283,6 +283,7 @@ function uriParameter(parameter) {
   var go = 0; 
   var app = 0;
   var curr = 0;
+  var latency = 0;
   var r = 0;
   var x = Math.random();
   var y = Math.random();
@@ -352,6 +353,14 @@ var timer = MT.process(
   }  
  }
 );
+var getLatency = MT.process(
+ function() { 
+  return;
+ },
+ function(returnv){
+  setInterval(function(){latency++;},1);
+ }
+);
 function init() {
     data = document.getElementById('benchQu').value;
     window.location = "index.htm?test=" + data;	
@@ -382,7 +391,7 @@ function updateDOM(){
 
 if(progressA == 1){
 progress.style.width = r / benchC * 100 + "%";
-progressScore.innerHTML = curr;
+progressScore.innerHTML = curr + "<br><a>@" + latency + "ms</a>";
 }
 }	
 
@@ -391,6 +400,7 @@ function tstart(){
     go = 1;
     timer(curr);
     return 1;
+    getLatency();
 }
 function score(){
 	if(test == "qck" || test == "std" || test == "ext" || test == "xtr" || test == "fll"){
