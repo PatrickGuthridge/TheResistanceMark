@@ -353,14 +353,9 @@ var timer = MT.process(
   }  
  }
 );
-var getLatency = MT.process(
- function() { 
-  return;
- },
- function(returnv){
-  setInterval(function(){latency++;},1);
- }
-);
+function getLatency() {
+	setInterval(function(){latency++;},1);
+}
 function init() {
     data = document.getElementById('benchQu').value;
     window.location = "index.htm?test=" + data;	
