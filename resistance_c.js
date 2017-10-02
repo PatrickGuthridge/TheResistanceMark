@@ -399,8 +399,8 @@ progressScore.innerHTML = curr + "<br><a>@" + latency + "ms</a>";
 function tstart(){
     go = 1;
     timer(curr);
-    return 1;
     getLatency();
+    return 1;
 }
 function score(){
 	if(test == "qck" || test == "std" || test == "ext" || test == "xtr" || test == "fll"){
