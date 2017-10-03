@@ -406,16 +406,22 @@ function score(){
 function results(){
 	var scores = testPrevScore.split("/");
 	var mean = score[1];
+	console.log(mean);
 	for(i = 1;i < scores.length;i++){
 		document.body.innerHTML += "<p>" + scores[i] + "</p>";
 	}
+	if(scores.length <= 2){
 	for(i = 2;i < scores.length;i++){
 		mean * score[i];
 		console.log(mean);
 	}
 	var meanScore = Math.round(Math.pow(mean, 1/scores.length - 1));
-	document.body.innerHTML += "<p>Final - " + meanScore + "</p>";
-	
+	console.log(meanScore);
+	}
+	else{
+		var meanScore = mean;
+	}
+	document.body.innerHTML += "<p>Final - " + meanScore + "</p>";	
 }
 function readMe(){
 	request("README.md");
