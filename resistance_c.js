@@ -405,7 +405,7 @@ function score(){
 }
 function results(){
 	var scores = testPrevScore.split("/");
-	var mean = score[i];
+	var mean = score[1];
 	for(i = 1;i < scores.length;i++){
 		document.body.innerHTML += "<p>" + scores[i] + "</p>";
 	}
