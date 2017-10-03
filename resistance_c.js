@@ -411,6 +411,7 @@ function results(){
 	}
 	for(i = 2;i < scores.length;i++){
 		mean * score[i];
+		console.log(mean);
 	}
 	var meanScore = Math.round(Math.pow(mean, 1/scores.length - 1));
 	document.body.innerHTML += "<p>Final - " + meanScore + "</p>";
