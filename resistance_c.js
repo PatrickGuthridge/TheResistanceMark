@@ -321,7 +321,7 @@ var MT = new Multithread(test_threads);
     x = input.in1;
     y = input.in2;
     z = input.in3;
-    //console.log("EvClc-[" + r + "] @" + curr + " // " , x , y , z);
+    console.log("EvClc-[" + r + "] @" + curr + " // " , x , y , z);
     if(z < x + y){
       start(2,x,y,z);
       return;
@@ -346,7 +346,7 @@ var timer = MT.process(
   return ti + 3;
  },
  function(returnv){
-      //console.log("EvTme-[" + returnv + "]");
+      console.log("EvTme-[" + returnv + "]");
   curr = returnv;
   if(go == 1){
 	setTimeout(function(){
@@ -371,7 +371,7 @@ function custom() {
 
 
   function start(i){
-    benchT = benchC / 1024 * 10;
+    benchT = benchC / 1024 * 15;
     r++;
     if(i == 3 && r <= benchC){
        setTimeout(function(){q(i,x,y,z);},550);
