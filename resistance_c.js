@@ -410,7 +410,7 @@ function results(){
 	for(i = 1;i < scores.length;i++){
 		document.body.innerHTML += "<p>" + scores[i] + "</p>";
 	}
-	if(scores.length <= 2){
+	if(scores.length > 2){
 	for(i = 2;i < scores.length;i++){
 		mean * score[i];
 		console.log(mean);
