@@ -405,21 +405,16 @@ function score(){
 }
 function results(){
 	var scores = testPrevScore.split("/");
-	var mean = scores[1];
-	console.log(mean);
-	for(i = 1;i < scores.length;i++){
+	scores.shift();
+	for(i = 0;i < scores.length;i++){
 		document.body.innerHTML += "<p>" + scores[i] + "</p>";
 	}
 	if(scores.length > 2){
-	for(i = 2;i < scores.length;i++){
-		mean = mean * score[i];
-		console.log(mean);
-	}
-	var meanScore = Math.round(Math.pow(meanScore, 1/scores.length - 1));
+	var meanScore = Math.round(Math.pow(multiply(scores), 1/scores.length));
 	console.log(meanScore);
 	}
 	else{
-	var meanScore = mean;
+	var meanScore = scores[0];
 	}
 	document.body.innerHTML += "<p>Final - " + meanScore + "</p>";	
 }
