@@ -353,9 +353,6 @@ var timer = MT.process(
   }  
  }
 );
-function getLatency() {
-	setInterval(function(){latency++;},1);
-}
 function init() {
     data = document.getElementById('benchQu').value;
     window.location = "index.htm?test=" + data;	
@@ -386,7 +383,7 @@ function updateDOM(){
 
 if(progressA == 1){
 progress.style.width = r / benchC * 100 + "%";
-progressScore.innerHTML = curr + "<br><a>@" + latency + "ms</a>";
+progressScore.innerHTML = curr;
 }
 }	
 
