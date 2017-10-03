@@ -405,9 +405,15 @@ function score(){
 }
 function results(){
 	var scores = testPrevScore.split("/");
+	var mean = score[i];
 	for(i = 1;i < scores.length;i++){
 		document.body.innerHTML += "<p>" + scores[i] + "</p>";
 	}
+	for(i = 2;i < scores.length;i++){
+		mean * score[i];
+	}
+	mean = Math.pow(mean, 1/scores.length - 1);
+	document.body.innerHTML += "<p>Final - " + scores[i] + "</p>";
 	
 }
 function readMe(){
