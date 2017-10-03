@@ -267,6 +267,13 @@ window.alert('This browser is not supported.');		throw new Error('This browser d
 	window['Multithread'] = Multithread;
 
 }();
+function multiply(numbers) {
+	var total = 1;
+	for (var i = 0; i < numbers.length; i++) {
+		total = (total * numbers[i]);
+	}
+	return total;
+}
 //
 //
 //
