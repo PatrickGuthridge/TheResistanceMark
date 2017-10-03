@@ -413,7 +413,7 @@ function results(){
 		mean * score[i];
 	}
 	mean = Math.pow(mean, 1/scores.length - 1);
-	document.body.innerHTML += "<p>Final - " + scores[i] + "</p>";
+	document.body.innerHTML += "<p>Final - " + mean + "</p>";
 	
 }
 function readMe(){
