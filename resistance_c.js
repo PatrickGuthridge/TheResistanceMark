@@ -2,7 +2,7 @@
 !function() {
 
 	var URL = window.URL || window.webkitURL;
-	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
+	if(!navigator.hardwareConcurrency){alert("results may not be accurate in this browser as it does not fully support webworkers");}if(!URL) {
 window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
 	}
 
@@ -295,7 +295,12 @@ function uriParameter(parameter) {
   var x = Math.random();
   var y = Math.random();
   var z = Math.random();
+if(navigator.hardwareConcurrency){
 var test_threads = navigator.hardwareConcurrency;
+}
+	else{
+	var test_threads = 1;
+	}
 console.log("running " + test_threads + " threads.");
 var MT = new Multithread(test_threads);
 
