@@ -7,7 +7,7 @@ vectori.src = "bgVector.jpg";
 var vectorii = new Image();
 vectorii.src = "endVector.jpg";
 var URL = window.URL || window.webkitURL;
-	if(!navigator.hardwareConcurrency){window.alert('This browser is not supported.');  throw new Error('This browser does fully not support Web Workers.')}if(!URL) {
+	if(!navigator.hardwareConcurrency){window.alert('ns');}if(!URL) {
 window.alert('This browser is not supported.');		throw new Error('This browser does not support Blob URLs');
 	}
 
