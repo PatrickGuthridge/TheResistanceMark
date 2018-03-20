@@ -840,7 +840,8 @@ function onscrollFrontpage(){
 		else{
 			document.getElementById("bottomContent").style.opacity = 0;			
 		}
-    }
+	}
+	requestAnimationFrame(onscrollFrontpage);
 
 }
 
@@ -875,5 +876,5 @@ setTimeout(function(){
 
 
 window.onload = onloadFrontpage;
-window.onscroll = onscrollFrontpage;
+requestAnimationFrame(onscrollFrontpage);
 window.onbeforeunload = to;
