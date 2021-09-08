@@ -1,5 +1,5 @@
 # TheResistanceMark
-***Please note: This repo is bad. Please ignore it if you are a job interviewer. Thanks <3***
+***Please note: This repo is bad. It always was. And always will be. Please ignore it if you are a job interviewer. Thanks <3***
 
 Thankyou to all the respective parties and developers who have made this project possible. A list of dependancies will be added soon.
 For now: Image credits:
