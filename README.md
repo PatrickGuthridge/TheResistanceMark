@@ -1,5 +1,5 @@
 # TheResistanceMark
-***Please note that this software is currently still under major development and therfore this file may not be up-to-date or accurate.***
+***Please note: This repo is bad. Please ignore it if you are a job interviewer. Thanks <3***
 
 Thankyou to all the respective parties and developers who have made this project possible. A list of dependancies will be added soon.
 For now: Image credits:
